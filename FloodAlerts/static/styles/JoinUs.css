@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    width: 900px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+p {
+    line-height: 1.5;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}

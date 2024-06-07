@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.sidebar {
+    width: 900px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.home p {
+    margin-bottom: 10px;
+}
+
+#alert-level {
+    font-weight: bold;
+    color: #155724; /* Green color for "Safe" */
+}
+
+#alert-level.warning {
+    color: #856404; /* Orange color for "Warning" */
+}
+
+#alert-level.danger {
+    color: #721c24; /* Red color for "Danger" */
+}
