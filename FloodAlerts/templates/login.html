@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nairobi Flood Alert System</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div id="logoContainer">
+    <img src="logo.png" alt="Nairobi Flood Alert System" id="logo">
+  </div>
+  <div id="loginContainer">
+    <h2>Login</h2>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <button id="loginBtn">Login</button>
+  </div>
+
+  <div id="loggedInContainer" style="display: none;">
+    <h2>Welcome!</h2>
+    <p>You are now logged in to the Nairobi Flood Alert System.</p>
+    <button id="logoutBtn">Logout</button>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>
