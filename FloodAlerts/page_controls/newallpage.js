@@ -15,6 +15,24 @@ forwardBtn.addEventListener('click', () => {
     window.history.forward();
 });
 
+// Search functionality
+const searchInput = document.getElementById('searchInput');
+const dashboardSections = document.querySelectorAll('.dashboard-section');
+
+searchInput.addEventListener('input', () => {
+    const searchValue = searchInput.value.toLowerCase();
+
+    dashboardSections.forEach(section => {
+        const sectionText = section.textContent.toLowerCase();
+        if (sectionText.includes(searchValue)) {
+            section.style.display = 'block';
+        } else {
+            section.style.display = 'none';
+        }
+    });
+});
+
+
 // Comment section
 const commentForm = document.getElementById('commentForm');
 const commentText = document.getElementById('commentText');
@@ -32,7 +50,3 @@ commentForm.addEventListener('submit', (e) => {
         alert('Please enter a comment before submitting.');
     }
 });
-
-
-
-
