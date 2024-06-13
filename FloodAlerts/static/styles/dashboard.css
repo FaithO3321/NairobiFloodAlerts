@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw; /* Ensure full viewport width */
+}
+
+.main-header {
+    background-color: black;
+    color: white;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main-header h1 {
+    color: gold;
+    margin: 0;
+}
+
+.main-header h6 {
+    color: white;
+    font-style: italic;
+    margin: 0;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    padding: 0.5em 0;
+    background-color: #f1f1f1;
+}
+
+.page-controls {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#searchInput {
+    width: 50%;
+    padding: 0.5em;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 0.5em 1em;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue for hover state */
+}
+
+.content-wrapper {
+    display: flex;
+    height: calc(100% - 3em); /* Adjust for the height of the navigation */
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #f0f0f0;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 1em 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 0.5em 1em;
+    display: block;
+    border: 1px solid #4CAF50; /* Add border to match the example */
+    border-radius: 4px;
+    background-color: white;
+}
+
+.sidebar ul li a:hover {
+    background-color: #ddd;
+}
+
+.main-content {
+    width: 80%;
+    padding: 1em;
+    overflow-y: auto;
+}
+
+.content-section {
+    display: none;
+}
+
+.content-section.active {
+    display: block;
+}
+

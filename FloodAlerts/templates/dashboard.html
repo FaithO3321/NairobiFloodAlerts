@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nairobi Flood Alerts - Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <header class="main-header">
+            <h1>Nairobi Flood Alerts</h1>
+            <h6>YOUR NUMBER ONE ALERT SYSTEM</h6>
+        </header>
+
+        <div class="navigation">
+            <div class="page-controls">
+                <input type="text" id="searchInput" placeholder="Search..." aria-label="Search">
+                <button onclick="search()">Search</button>
+
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="sidebar">
+                <ul>
+                    <li><a href="Regions.html" onclick="displaySection('regions')">Regions</a></li>
+                    <li><a href="Weather.html" onclick="displaySection('weather')">Weather</a></li>
+                    <li><a href="Rivers.html" onclick="displaySection('rivers')">Rivers</a></li>
+                    <li><a href="FloodAlerts.html" onclick="displaySection('flood-alerts')">Flood Alerts</a></li>
+                    <li><a href="BePrepared.html" onclick="displaySection('be-prepared')">Be Prepared</a></li>
+                </ul>
+            </div>
+            <div class="main-content" id="main-content">
+                <div id="regions" class="content-section"> Welcome! Click sidebar section to view content.</div>
+                <div id="weather" class="content-section">Weather content goes here</div>
+                <div id="rivers" class="content-section">Rivers content goes here</div>
+                <div id="flood-alerts" class="content-section">Flood Alerts content goes here</div>
+                <div id="be-prepared" class="content-section">Be Prepared content goes here</div>
+            </div>
+        </div>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>
+

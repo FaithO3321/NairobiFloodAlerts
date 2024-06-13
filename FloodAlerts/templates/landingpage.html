@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nairobi Flood Alerts</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+        <nav class="navbar">
+        <div class="logo-container">
+            <h1>Nairobi Flood Alerts</h1>
+            <h6>YOUR NUMBER ONE ALERT SYSTEM</h6>
+        </div>
+        <div class="nav-links">
+        <a href="about.html" class="nav-btn">About</a>
+        <a href="questions.html" class="nav-btn">FAQs</a>
+        <button id="loginBtn">Login</button>
+        <button id="signUpBtn">Sign Up</button>
+      </div>
+    </nav>
+    <!-- Add this modal structure to your existing HTML -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeLogin">&times;</span>
+            <form id="loginForm" class="form">
+                <h2>Login</h2>
+                <label for="loginUsername">Username:</label>
+                <input type="text" id="loginUsername" name="username" required>
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" name="password" required>
+                <button type="submit">Login</button>
+                <button type="button" class="socialBtn" id="facebookLogin">Login with Facebook</button>
+                <button type="button" class="socialBtn" id="googleLogin">Login with Google</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="signUpModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeSignUp">&times;</span>
+            <form id="signUpForm" class="form">
+                <h2>Sign Up</h2>
+                <label for="signUpUsername">Username:</label>
+                <input type="text" id="signUpUsername" name="username" required>
+                <label for="signUpPassword">Password:</label>
+                <input type="password" id="signUpPassword" name="password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+  </header>
+
+  <main>
+    <div class="intro-section">
+      <video autoplay muted loop id="background-video">
+          <source src="aboutwebsite.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+      <div class="overlay">
+          <h1>Nairobians Stay Alert</h1>
+          <p>This website prepares you for possible flood threats and educates you on safety measures. Your safety is our priority.</p>
+      </div>
+  </div>
+
+    <div class="trending-news-container">
+      <div class="trending-news-header">
+          <p>Trending News</p>
+      </div>
+      <div class="video-grid">
+          <div class="video-item">
+              <iframe src="https://www.youtube.com/embed/_0bCAmPbDOY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <p>Nairobi residents wake up to floods.</p>
+          </div>
+          <div class="video-item">
+              <iframe src="https://www.youtube.com/embed/_hffrq-LocU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <p>President defends government amidst disaster.</p>
+          </div>
+          <div class="video-item">
+              <iframe src="https://www.youtube.com/embed/1Q6z6-r7TcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <p>Rain causes havoc in Mukuru-Kayaba.</p>
+          </div>
+          <div class="video-item">
+              <iframe src="https://www.youtube.com/embed/Oq_dVpYqYs8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <p>Situation in Kangundo road inhibit transport.</p>
+          </div>
+      </div>
+  </div>
+
+  <div class="number-of-users">
+    <h1>Number of Users</h1>
+    <div class="user-stats">
+        <div class="total-users">
+            <h2>Total Users</h2>
+            <p>3,000,000</p>
+            <div class="underline longer"></div>
+        </div>
+        <div class="active-users">
+            <h2>Active Users</h2>
+            <p>800,000</p>
+            <div class="underline shorter"></div>
+        </div>
+    </div>
+</div>
+
+      <div class="newsletter-container">
+        <div class="newsletter-header">
+            <p>Subscribe to our newsletter</p>
+        </div>
+        <div class="newsletter-form">
+            <form id="subscribeForm">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div> 
+  </main>
+
+  <footer>
+    <div class="footer-content">
+        <div class="footer-left">
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="join.html">Join Us</a></li>
+                <li><a href="Contacts.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <div class="social-icons">
+                <a href="https://twitter.com/FaithOm44254634" target="_blank"><img src="Xlogo.jpg" alt="Twitter"></a>
+                <a href="https://facebook.com" target="_blank"><img src="facebooklogo.png" alt="Facebook"></a>
+                <a href="https://github.com/FaithO3321" target="_blank"><img src="github.png" alt="GitHub"></a>
+                <a href="https://www.linkedin.com/in/faith-omondi-538298244/" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html> 

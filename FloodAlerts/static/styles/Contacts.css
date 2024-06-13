@@ -1,0 +1,42 @@
+.contact-us {
+    background-color: #f8f8f8;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .contact-us h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .email,
+  .phone-numbers {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+  }
+  
+  .email i,
+  .phone-numbers i {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  
+  .email a,
+  .phone-numbers a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  .email a:hover,
+  .phone-numbers a:hover {
+    color: #666;
+  }
