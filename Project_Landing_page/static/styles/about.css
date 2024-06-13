@@ -1,0 +1,38 @@
+adius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2, h3, h4 {
+    color: #333;
+    margin-top: 1em;
+}
+
+p {
+    margin: 1em 0;
+    color: #666;
+}
+
+ul, ol {
+    margin: 1em 0;
+    padding-left: 20px;
+}
+
+ul li, ol li {
+    margin: 0.5em 0;
+    color: #666;
+}
+
+ul li::marker, ol li::marker {
+    color: #007BFF;
+}
+
+li h4 {
+    margin: 0.5em 0 0.2em 0;
+    color: #333;
+}
+
+li p {
+    margin: 0.2em 0;
+
